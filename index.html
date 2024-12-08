@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#games">Games</a></li>
+        </ul>
+        <div class="navbar-right">
+            <button class="menu-toggle">☰</button>
+        </div>
+    </nav>
+
+    <div class="centered">
+        <h1>Tic Tac Toe</h1>
+        <p id="winner"></p>
+        <button id="reset">Reset Game</button>
+    </div>
+
+    <!-- Start Game Overlay -->
+    <div id="start-game-overlay" class="overlay">
+        <div class="overlay-content">
+            <h2>Welcome to Tic Tac Toe</h2>
+            <button id="start-game">Start Game</button>
+        </div>
+    </div>
+
+    <!-- Player 1 Selection Modal -->
+    <div id="player1-select-modal" class="modal">
+        <div class="modal-content">
+            <h2>Player 1, Choose Your Avatar</h2>
+            <div class="avatar-options">
+                <img src="public/pic1.jpg" class="avatar" data-player="1" data-img="public/pic1.jpg">
+                <img src="public/pic2.jpg" class="avatar" data-player="1" data-img="public/pic2.jpg">
+                <img src="public/pic3.jpg" class="avatar" data-player="1" data-img="public/pic3.jpg">
+                <img src="public/pic4.jpg" class="avatar" data-player="1" data-img="public/pic4.jpg">
+            </div>
+        </div>
+    </div>
+
+    <!-- Player 2 Selection Modal -->
+    <div id="player2-select-modal" class="modal">
+        <div class="modal-content">
+            <h2>Player 2, Choose Your Avatar</h2>
+            <div class="avatar-options">
+                <img src="public/pic1.jpg" class="avatar" data-player="1" data-img="public/pic1.jpg">
+                <img src="public/pic2.jpg" class="avatar" data-player="1" data-img="public/pic2.jpg">
+                <img src="public/pic3.jpg" class="avatar" data-player="1" data-img="public/pic3.jpg">
+                <img src="public/pic4.jpg" class="avatar" data-player="1" data-img="public/pic4.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div id="game-board">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
